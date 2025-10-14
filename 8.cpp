@@ -30,5 +30,5 @@ int main() {
     ++c;
     c.display();
 
-    return 0;
+   
 }
