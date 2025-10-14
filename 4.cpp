@@ -3,7 +3,7 @@ using namespace std;
 
 class AreaCalculator {
 public:
-    // Inline functions to calculate areas
+    
 
     inline double circle(double radius) {
         return 3.14159 * radius * radius;
