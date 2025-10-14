@@ -12,7 +12,7 @@ public:
         cout << "Enter Book ID: ";
         cin >> BookID;
         cout << "Enter Book Name: ";
-        cin >> BookName;  // No spaces allowed here for simplicity
+        cin >> BookName; 
         cout << "Enter Book Price: ";
         cin >> BookPrice;
     }
