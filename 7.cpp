@@ -21,11 +21,11 @@ public:
         cout << hours << ":" << minutes << ":" << seconds << endl;
     }
 
-    // Friend function declaration
+   
     friend Time addTime(Time t1, Time t2);
 };
 
-// Friend function to add two Time objects
+
 Time addTime(Time t1, Time t2) {
     Time temp;
     temp.seconds = t1.seconds + t2.seconds;
@@ -52,5 +52,5 @@ int main() {
     cout << "Sum of times: ";
     sum.display();
 
-    return 0;
+   
 }
