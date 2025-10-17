@@ -3,21 +3,21 @@ using namespace std;
 
 class Book {
 private:
-    int BookID;
-    char BookName[50];
+    string BookID;
+    char BookName[100];
     float BookPrice;
 
 public:
-    void inputDetails() {
-        cout << "Enter Book ID: ";
-        cin >> BookID;
+    void inputdetails() {
+    cout << "Enter Book ID: ";
+      cin >> BookID;
         cout << "Enter Book Name: ";
         cin >> BookName; 
         cout << "Enter Book Price: ";
         cin >> BookPrice;
     }
 
-    void displayDetails() {
+    void displaydetails() {
         cout << "Book ID: " << BookID << ", Name: " << BookName << ", Price: Rs " << BookPrice << endl;
     }
 
@@ -27,29 +27,33 @@ public:
 };
 
 int main() {
-    Book book1, book2, book3;
+    Book b1, b2, b3;
     int copies;
 
     cout << "Enter details for book 1:\n";
-    book1.inputDetails();
+    b1.inputdetails();
     cout << "Enter number of copies: ";
     cin >> copies;
-    book1.displayDetails();
-    cout << "Total cost: Rs " << book1.total_cost(copies) << "\n\n";
+    
 
     cout << "Enter details for book 2:\n";
-    book2.inputDetails();
+    b2.inputdetails();
     cout << "Enter number of copies: ";
     cin >> copies;
-    book2.displayDetails();
-    cout << "Total cost: Rs " << book2.total_cost(copies) << "\n\n";
+   
 
     cout << "Enter details for book 3:\n";
-    book3.inputDetails();
+    b3.inputdetails();
     cout << "Enter number of copies: ";
     cin >> copies;
-    book3.displayDetails();
-    cout << "Total cost: Rs " << book3.total_cost(copies) << "\n";
-
     
+
+    b1.displaydetails();
+    cout << "Total cost: Rs " << b1.total_cost(copies) << "\n\n";
+
+     b2.displaydetails();
+    cout << "Total cost: Rs " << b2.total_cost(copies) << "\n\n";
+
+    b3.displaydetails();
+    cout << "Total cost: Rs " << b3.total_cost(copies) << "\n";
 }
