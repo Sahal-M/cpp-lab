@@ -22,23 +22,31 @@ public:
 
 class Student : public Person {
 private:
-    int roll_number;
+    int rollnumber;
 
 public:
     void setstudent(string n, int a, int r) {
         setperson(n,a);       
-        roll_number = r;
+        rollnumber = r;
     }
 
     void showdetails() {
         display();             
-        cout<<"Roll Number: "<<roll_number<<endl;
+        cout<<"Roll Number: "<<rollnumber<<endl;
     }
 };
 
 int main() {
     Student s;
-    s.setstudent("Alice", 20, 101);
+    string name;
+    int age,rollnumber;
+    cout<<"enter name"<<endl;
+    cin>>name;
+    cout<<"enter age"<<endl;
+    cin>>age;
+    cout<<"enter roll number"<<endl;
+    cin>>rollnumber;
+    s.setstudent(name, age, rollnumber);
     s.showdetails();
 
 }
