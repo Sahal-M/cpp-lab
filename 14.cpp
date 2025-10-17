@@ -53,10 +53,23 @@ public:
 int main() {
     Result r;
     string name,course;
-    int roll,m1,m2,m3.bonus;
-     r.setStudent("Alice", 101, "CSE");
-     r.setMarks(80, 85, 90);
-    r.setBonus(5);
+    int roll,m1,m2,m3,bonus;
+    cout<<"enter name"<<endl;
+    cin>>name;
+        cout<<"enter roll number"<<endl;
+    cin>>roll;
+    cout<<"enter course name"<<endl;
+    cin>>course;
+     r.setStudent(name, roll, course);
+    cout<<"enter marks"<<endl;
+    cin>>m1;
+    cin>>m2;
+    cin>>m3;
+        
+     r.setMarks(m1, m2, m3);
+    cout<<"entetr bonus marks"<<endl;
+    cin>>bonus;
+    r.setBonus(bonus);
       r.displayResult();
 
 }
