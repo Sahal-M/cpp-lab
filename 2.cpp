@@ -15,6 +15,7 @@ public:
         cin >> BookName; 
         cout << "Enter Book Price: ";
         cin >> BookPrice;
+        cout<<endl;
     }
 
     void displaydetails() {
