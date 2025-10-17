@@ -3,7 +3,7 @@ using namespace std;
 
 class Time {
 private:
-    int hours;
+     int hours;
     int minutes;
     int seconds;
 
@@ -27,15 +27,15 @@ public:
 
 
 Time addTime(Time t1, Time t2) {
-    Time temp;
-    temp.seconds = t1.seconds + t2.seconds;
-    temp.minutes = t1.minutes + t2.minutes + temp.seconds / 60;
-    temp.seconds = temp.seconds % 60;
+    Time time;
+    time.seconds = t1.seconds + t2.seconds;
+    time.minutes = t1.minutes + t2.minutes + time.seconds / 60;
+    time.seconds = time.seconds % 60;
 
-    temp.hours = t1.hours + t2.hours + temp.minutes / 60;
-    temp.minutes = temp.minutes % 60;
+    time.hours = t1.hours + t2.hours + time.minutes / 60;
+    time.minutes = time.minutes % 60;
 
-    return temp;
+    return time;
 }
 
 int main() {
@@ -43,10 +43,10 @@ int main() {
 
     cout << "Enter first time:\n";
     t1.input();
-
+    cout<<emdl;
     cout << "Enter second time:\n";
     t2.input();
-
+    cout<<endl;
     sum = addTime(t1, t2);
 
     cout << "Sum of times: ";
