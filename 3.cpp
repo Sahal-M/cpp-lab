@@ -3,8 +3,8 @@ using namespace std;
 
 class Rectangle {
 private:
-    int length;
-    int width;
+    float length;
+    float width;
 
 public:
     
@@ -14,7 +14,7 @@ public:
     }
 
    
-    Rectangle(int l, int w) {
+    Rectangle(float l, float w) {
         length = l;
         width = w;
     }
@@ -31,11 +31,20 @@ public:
 };
 
 int main() {
-    Rectangle r1;         
-    Rectangle r2(10, 5);  
-
-    cout << "Rectangle 1: ";
+    Rectangle r1;
+ cout << "Rectangle 1: ";
     r1.display();
+
+    
+    float l,w;
+    cout<<"enter length"<<endl;
+    cin>>l;
+    cout<<"enter width"<<endl;
+    cin>>w;
+    
+    Rectangle r2(l, w);  
+
+   
 
     cout << "Rectangle 2: ";
     r2.display();
