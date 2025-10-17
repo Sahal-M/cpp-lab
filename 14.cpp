@@ -21,8 +21,8 @@ protected:
 
 public:
     void setMarks(int m1, int m2, int m3) {
-        marks1 = m1;
-        marks2 = m2;
+      marks1 = m1;
+         marks2 = m2;
         marks3 = m3;
     }
 };
@@ -41,20 +41,22 @@ class Result : public Test, public GraceMarks {
 public:
     void displayResult() {
         int total = marks1 + marks2 + marks3 + bonusMark;
-        cout<<"Name: "<<name<<endl;
+         cout<<"Name: "<<name<<endl;
         cout<<"Roll No: "<<rollno<<endl;
-        cout<<"Course: "<<course<<endl;
-        cout<<"Marks: "<<marks1<<", "<<marks2<<", "<<marks3<<endl;
-        cout<<"Bonus Marks: "<<bonusMark<<endl;
-        cout<<"Total Marks: "<<total<<endl;
+         cout<<"Course: "<<course<<endl;
+         cout<<"Marks: "<<marks1<<", "<<marks2<<", "<<marks3<<endl;
+         cout<<"Bonus Marks: "<<bonusMark<<endl;
+          cout<<"Total Marks: "<<total<<endl;
     }
 };
 
 int main() {
     Result r;
-    r.setStudent("Alice", 101, "CSE");
-    r.setMarks(80, 85, 90);
+    string name,course;
+    int roll,m1,m2,m3.bonus;
+     r.setStudent("Alice", 101, "CSE");
+     r.setMarks(80, 85, 90);
     r.setBonus(5);
-    r.displayResult();
+      r.displayResult();
 
 }
