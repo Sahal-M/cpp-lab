@@ -1,31 +1,47 @@
 #include <iostream>
 using namespace std;
 
-class LandAnimal {
+class online_shopping {
 public:
-    void walk() {
-        cout << "This animal can walk on land." << endl;
-    }
+string item_name;
+int quantity;
+float price;
+
+
 };
 
-class AquaticAnimal {
+
+class shipping_details {
 public:
-    void swim() {
-        cout << "This animal can swim in water." << endl;
-    }
+float shipping_charge = 5.99;
 };
 
-class AmphibiousAnimal : public LandAnimal, public AquaticAnimal {
+class bill : public online_shopping,public shipping_details {
 public:
-    void describe() {
-        cout << "This is an amphibious animal:" << endl;
-        walk();   
-        swim();   
-    }
+void input(){
+
+    cout<<"enter item name"<<endl;
+    cin>>item_name;
+    cout<<"enter quantity"<<endl;
+    cin>>quantity;
+    cout<<"enter price"<<endl;
+    cin>>price;
+    
+}
+void display()
+{
+float total = price + shipping_charge;
+cout<<"Item : "<<item_name<<endl;
+cout<<"Quantity : "<<quantity<<endl;
+cout<<"Price : Rs. "<<price<<endl;
+cout<<"Shipping Charge : Rs. "<<shipping_charge<<endl;
+cout<<"Total : Rs. "<<total<<endl;
+}
 };
+int main()
+{
 
-int main() {
-    AmphibiousAnimal frog;
-    frog.describe();
-
+bill b1;
+b1.input();
+b1.display();
 }
