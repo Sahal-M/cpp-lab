@@ -3,40 +3,40 @@ using namespace std;
 
 class Car {
 public:
-    string brand;
-    string model;
-    int year;
+       string brand;
+        string model;
+       int year;
 
-    void readData() {
-        cout << "Enter brand: ";
-        cin >> brand;
+    void input() {
+    cout << "Enter brand: ";
+     cin >> brand;
         cout << "Enter model: ";
-        cin >> model;
+      cin >> model;
         cout << "Enter year: ";
         cin >> year;
     }
 
-    void displayDetails() {
+    void displaydetails() {
         cout << "Brand: " << brand << ", Model: " << model << ", Year: " << year << endl;
     }
 };
 
 int main() {
-    Car car1, car2, car3;
+    Car c1, c2, c3;
 
     cout << "Enter details for car 1:" << endl;
-    car1.readData();
+    c1.input();
 
     cout << "\nEnter details for car 2:" << endl;
-    car2.readData();
+    c2.input();
 
     cout << "\nEnter details for car 3:" << endl;
-    car3.readData();
+    c3.input();
 
     cout << "\nCar Details:" << endl;
-    car1.displayDetails();
-    car2.displayDetails();
-    car3.displayDetails();
+    c1.displaydetails();
+    c2.displaydetails();
+    c3.displaydetails();
 
    
 }
